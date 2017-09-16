@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/horizontleline">
+
+
+    <FrameLayout
+        android:id="@+id/Relative1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        >
+
+        <com.example.user.circleprogressview.CircleProgressView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/progress_view"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="10dp"
+            app:cpv_barColor="@color/barcolor"
+            app:cpv_barWidth="17dp"
+            app:cpv_fillColor="@color/fillcolor"
+            app:cpv_rimColor="@color/Whitecolor"
+            app:cpv_rimWidth="19dp"
+            app:cpv_textColor="@color/Whitecolor"
+            app:cpv_textSize="20dp"
+            app:cpv_unitPosition="top"
+            app:cpv_contourColor="@color/Whitecolor"
+            app:cpv_contourSize="1dp"
+            app:cpv_maxValue="100"
+            />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="COMPLETED"
+                android:layout_marginTop="25dp"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="-6dp"
+        android:layout_toRightOf="@+id/Relative1"
+        >
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:paddingTop="5dp"
+            android:text="Test"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="3000"
+                android:layout_weight="0.2"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:textSize="14sp"
+                android:paddingTop="5dp"
+                android:text="RS.1000/Month"
+                android:layout_weight="0.4"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFBABABA"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="-10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Next Draw: 22nd Apr 2016"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="-2dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:src="@drawable/messagebox"
+                android:layout_weight=".1"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
